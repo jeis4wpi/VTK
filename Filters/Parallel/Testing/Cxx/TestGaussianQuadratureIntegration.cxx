@@ -219,7 +219,7 @@ bool TestPyramid(
   test &= Assert(vtkMathUtilities::FuzzyCompare(GetVolume(gaussianIntegrator), 0.25, 1e-10),
     "PYRAMID, Wrong Gaussian integration volume for non planar shape");
   test &= Assert(vtkMathUtilities::FuzzyCompare(GetVolume(gaussianIntegrator), gaussVolume, 1e-10),
-    "PYRAMID, Gauss Integration should be independant of point ordering");
+    "PYRAMID, Gauss Integration should be independent of point ordering");
 
   return test;
 }
